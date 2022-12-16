@@ -1,7 +1,7 @@
 <h3>Updates to tasks</h3>
 
 <form method="POST" action=""> <!-- LEAVE ACTION BLANK OR ELSE IT WILL JUST MAKE ANOTHER TASK -->
-    {% csrf_token %} <!-- need this so it doesnt return an error -->
+    {% csrf_token %} <!-- need this so it doesnt return an error, same for all POST method -->
 
     {{form}}
     <input type="submit" name="Update This Task">

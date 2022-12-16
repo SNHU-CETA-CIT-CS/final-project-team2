@@ -1,7 +1,7 @@
 <p> Delete "{{item}}?</p>
 
 <form method="POST" action="">
-    {% csrf_token %}
+    {% csrf_token %} <!-- DO NOT TOUCH - OR ELSE YOU WILL GET A 403 ERROR , ADD FOR ALL POST METHOD -->
     <input type="submit" name="Yes">
 
 </form>
